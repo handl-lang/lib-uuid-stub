@@ -1,0 +1,2 @@
+-- lib-uuid-stub: package manifest.
+{ modules: ["uuid-stub"] }
