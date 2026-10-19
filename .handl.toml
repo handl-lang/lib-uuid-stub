@@ -1,0 +1,5 @@
+# handl language manifest for uuid-stub.
+[dependencies]
+
+# own package
+uuid-stub = { path = "src" }
