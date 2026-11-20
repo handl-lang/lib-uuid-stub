@@ -1,2 +1,2 @@
 -- lib-uuid-stub: package manifest.
-{ modules: ["uuid-stub"] }
+{ modules: ["uuid-stub"], description: "Deterministic stub UUID backend for tests.", license: "MIT" }
