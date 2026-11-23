@@ -6,7 +6,7 @@
 
 [[repos]]
 name = "handl-lang/lib-uuid-stub"
-dir = "/home/luis/GitHub/handl-lang/lib-uuid-stub"
+dir = "~//GitHub/handl-lang/lib-uuid-stub"
 branch = "refs/heads/main"
   [repos.runner]
   kind = "script"
