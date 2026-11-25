@@ -1,3 +1,30 @@
+# lib-uuid-stub
+
+`uuid`: stub backend — deterministic UUIDs for tests. Pure `.hnl`.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/index.hnl` | the stub implementation |
+| `pkg.hnl` | manifest — `modules: ["uuid-stub"]` |
+| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+
+## Contract
+
+- Deterministic stub satisfying the `uuid` contract (`lib-uuid`) for
+  tests.
+
+## Verification
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+```
+
+## License
+
+MIT.
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
