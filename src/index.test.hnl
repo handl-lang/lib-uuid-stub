@@ -1,0 +1,12 @@
+--- uuid-stub -- deterministic backend smoke tests.
+---
+--- The stub returns a fixed v4 UUID so tests and benchmarks stay
+--- reproducible; every call must yield the same canonical string.
+
+from "./index" import * as m
+
+test_v4_deterministic := assert m.v4() == "00000000-0000-4000-8000-000000000000"
+
+test_v4_repeat := assert m.v4() == m.v4()
+
+test_v4_format := assert str.length(m.v4()) == 36
